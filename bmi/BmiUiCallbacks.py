@@ -6,43 +6,42 @@ Created on Fri Dec 04 23:33:35 2015
 """
 
 # Here we provide the necessary imports.
-
-
 # inport BmiGui object (instantiated in BmiApp.py)
 import BmiApp
 
-   
+# BMI limits and classification arrays
+bmi_limits   = [16.0, 18.5, 25.0, 30.0, 35.0, 40.0]
+
+bmi_descript = ['Severely Underweight', \
+                'Underweight', \
+                'NORMAL Health Weight', \
+                'Overweight', \
+                'Obese Class I', \
+                'Obese Class II',\
+                'Obese Class III']
+                
+BMI_ENGLISH_UNIT_FACTOR = 703
+  
+#############################################################################              
+# Callback function for the CalcBmi button              
 def pushbutton_calc_bmi_clicked_callback():
+   
+
    height_in_inches = 12.0 * BmiApp.BmiGui.spinBox_Height_Feet.value() + \
                              BmiApp.BmiGui.doubleSpinBox_Height_Inches.value()
 
-   height_in_feet = BmiApp.BmiGui.spinBox_Height_Feet.value() 
    weight = 1.0 * BmiApp.BmiGui.doubleSpinBox_Weight.value()
-   bmi = (weight/(height_in_inches*height_in_inches))*703
+   bmi = (weight/(height_in_inches*height_in_inches))*BMI_ENGLISH_UNIT_FACTOR
    
    BmiApp.BmiGui.statusBar.clearMessage()
-   if bmi <= 16.0: 
-      BmiApp.BmiGui.statusBar.showMessage(
-                              "BMI = %2.1f: Severely Underweight" % bmi) 
-   elif 16.0 <= bmi <= 18.5: 
-      BmiApp.BmiGui.statusBar.showMessage(
-                              "BMI = %2.1f: Underweight" % bmi)
-   elif 18.5 <= bmi <= 25.0: 
-      BmiApp.BmiGui.statusBar.showMessage(
-                              "BMI = %2.1f: NORMAL Health Weight" % bmi)
-   elif 25.0 <= bmi <= 30.0: 
-      BmiApp.BmiGui.statusBar.showMessage(
-                              "BMI = %2.1f: Overweight" % bmi)
-   elif 30.0 <= bmi <= 35.0: 
-      BmiApp.BmiGui.statusBar.showMessage(
-                              "BMI = %2.1f: Obese Class I" % bmi)
-   elif 35.0 <= bmi <= 40.0: 
-      BmiApp.BmiGui.statusBar.showMessage(
-                              "BMI = %2.1f: Obese Class II" % bmi)
-   elif bmi > 40.0: 
-      BmiApp.BmiGui.statusBar.showMessage(
-                              "BMI = %2.1f: Obese Class III" % bmi)
-   bmi_string =  "%10.1f" % bmi
+   
+   for i in range (len(bmi_limits)): 
+       if bmi <= bmi_limits[i]:
+          status_bar_string = "BMI = %10.1f" % bmi + "   " + bmi_descript[i]
+          BmiApp.BmiGui.statusBar.showMessage(status_bar_string)
+          break
+   
+   bmi_string =  "%10.1f" % bmi 
    BmiApp.BmiGui.textBrowser_BmiResults.setText(bmi_string)     
 
 
