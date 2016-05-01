@@ -1,9 +1,11 @@
 # -*- coding: utf-8 -*-
 """
 Created on Fri Dec 04 23:33:35 2015
-
-@author: Donald Waldron
+@author: Don Waldron
 """
+############################################################################
+#  Provides GUI callback(s), which provides BMI calculation 
+############################################################################
 
 # Here we provide the necessary imports.
 # inport BmiGui object (instantiated in BmiApp.py)
@@ -23,7 +25,8 @@ bmi_descript = ['Severely Underweight', \
 BMI_ENGLISH_UNIT_FACTOR = 703
   
 #############################################################################              
-# Callback function for the CalcBmi button              
+# Callback function for the CalcBmi button
+#############################################################################              
 def pushbutton_calc_bmi_clicked_callback():
    
 

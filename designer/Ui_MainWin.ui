@@ -113,7 +113,7 @@
      <number>1</number>
     </property>
     <property name="value">
-     <number>5</number>
+     <number>6</number>
     </property>
    </widget>
    <widget class="QDoubleSpinBox" name="doubleSpinBox_Weight">
@@ -132,7 +132,7 @@
      <double>900.000000000000000</double>
     </property>
     <property name="value">
-     <double>100.000000000000000</double>
+     <double>180.000000000000000</double>
     </property>
    </widget>
    <widget class="QTextBrowser" name="textBrowser_BmiResults">
@@ -275,13 +275,13 @@
     </property>
     <addaction name="actionAbout"/>
    </widget>
-   <widget class="QMenu" name="menuVersion_1_1">
+   <widget class="QMenu" name="menuVersion">
     <property name="title">
-     <string>Version 1.1</string>
+     <string>Version 1.2</string>
     </property>
    </widget>
    <addaction name="menuHelp"/>
-   <addaction name="menuVersion_1_1"/>
+   <addaction name="menuVersion"/>
   </widget>
   <action name="actionMenuHelpAbout">
    <property name="text">

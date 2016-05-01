@@ -1,9 +1,13 @@
 # -*- coding: utf-8 -*-
 """
 Created on Sat Mar 05 20:16:28 2016
-
 @author: Don Waldron
 """
+
+############################################################################
+# Instantiates a class of Ui_MainWindow, binds callback to a pushbutton 
+# and displays (shows) the GUI
+############################################################################
 
 # Here we provide the necessary imports.
 import sys
