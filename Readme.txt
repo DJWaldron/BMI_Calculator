@@ -1,13 +1,14 @@
 BMI Calculator, built to learn Python, QT and GIT
-Author: Don Waldron - Version 1.2
+Author: Don Waldron - Version 1.2.1
 
-Developed using Anaconda 2 on Windows 8.1, Spyder 2.3.7, with Python 2.7.10 and PyQt4 
+Developed using Anaconda 2 on Windows 8.1, 
+                Spyder 2.3.7, with Python 2.7.10 and PyQt4 
 
 bmi.py                 - The main (the file to execute)
 convert_ui_to_py.bat   - Creates Ui_MainWin.py from Ui_MainWin.ui 
 
-bmi\.spyderproject     - The Anaconda Spyder project (which needs bmi.py added, but
-                         I didn't know how to add)
+bmi\.spyderproject     - The Anaconda Spyder project (which needs bmi.py added,
+                         but I didn't know how to add)
 bmi\BmiApp.py          - Instantiates a class of Ui_MainWindow, binds callback 
                          to a pushbutton and displays (shows) the GUI
 bmi\BmiUiCallbacks.py  - One callback, which calculates and displays BMI

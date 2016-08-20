@@ -10,8 +10,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>383</width>
-    <height>289</height>
+    <width>415</width>
+    <height>298</height>
    </rect>
   </property>
   <property name="mouseTracking">
@@ -90,6 +90,9 @@
     <property name="maximum">
      <double>11.000000000000000</double>
     </property>
+    <property name="value">
+     <double>11.000000000000000</double>
+    </property>
    </widget>
    <widget class="QSpinBox" name="spinBox_Height_Feet">
     <property name="geometry">
@@ -113,7 +116,7 @@
      <number>1</number>
     </property>
     <property name="value">
-     <number>6</number>
+     <number>5</number>
     </property>
    </widget>
    <widget class="QDoubleSpinBox" name="doubleSpinBox_Weight">
@@ -132,7 +135,7 @@
      <double>900.000000000000000</double>
     </property>
     <property name="value">
-     <double>180.000000000000000</double>
+     <double>185.000000000000000</double>
     </property>
    </widget>
    <widget class="QTextBrowser" name="textBrowser_BmiResults">
@@ -265,7 +268,7 @@
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>383</width>
+     <width>415</width>
      <height>21</height>
     </rect>
    </property>
@@ -275,13 +278,7 @@
     </property>
     <addaction name="actionAbout"/>
    </widget>
-   <widget class="QMenu" name="menuVersion">
-    <property name="title">
-     <string>Version 1.2</string>
-    </property>
-   </widget>
    <addaction name="menuHelp"/>
-   <addaction name="menuVersion"/>
   </widget>
   <action name="actionMenuHelpAbout">
    <property name="text">
@@ -305,7 +302,7 @@
   </action>
   <action name="actionAbout">
    <property name="text">
-    <string extracomment="Version 1.1">About</string>
+    <string extracomment="Version 1.21">About</string>
    </property>
   </action>
  </widget>

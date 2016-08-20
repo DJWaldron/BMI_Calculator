@@ -4,7 +4,7 @@ Created on Fri Dec 04 23:33:35 2015
 @author: Don Waldron
 """
 ############################################################################
-#  Provides GUI callback(s), which provides BMI calculation 
+#  Provides QT GUI callback(s), which provides BMI calculation 
 ############################################################################
 
 # Here we provide the necessary imports.
