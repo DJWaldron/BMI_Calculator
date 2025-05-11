@@ -1,3 +1,1 @@
-cd designer
-pyuic4 Ui_MainWin.ui -o ..\bmi\ui\Ui_MainWin.py
-cd ..
+pyuic5 Ui_MainWin.ui -o Ui_MainWin.py
